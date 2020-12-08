@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import string
 import random
 print('Erstellt ein sicheres und leicht zu merkendes Passwort')
