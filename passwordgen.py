@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-import string
+
 import random
 print('Erstellt ein sicheres und leicht zu merkendes Passwort')
 #loads all the languages words, numbers and special characters into lists
-words = [line.rstrip('\n') for line in open("deutsch.txt")]
-numbers = [1,2,3,4,5,6,7,8,9,0]
-special = ["!", "§", "$", "%", "&", "=", "?", "+", "#", "-","*"]
+wordsFile = open("deutsch.txt")
+words= wordsFile.read().splitlines()
+#words = [line.rstrip('\n') for line in open("deutsch.txt")]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+special = ["!", "§", "$", "%", "&", "=", "?", "+", "#", "-", "*"]
 
 #chooses 3 random words
 part0 = random.choice(words)
